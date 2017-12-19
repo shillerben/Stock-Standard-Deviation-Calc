@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA9D340C1FE97ED9000A985B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D340B1FE97ED9000A985B /* AppDelegate.swift */; };
+		BA9D340E1FE97ED9000A985B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D340D1FE97ED9000A985B /* ViewController.swift */; };
+		BA9D34111FE97ED9000A985B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9D340F1FE97ED9000A985B /* Main.storyboard */; };
+		BA9D34131FE97ED9000A985B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9D34121FE97ED9000A985B /* Assets.xcassets */; };
+		BA9D34161FE97ED9000A985B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9D34141FE97ED9000A985B /* LaunchScreen.storyboard */; };
+		BA9D34211FE97EDA000A985B /* Stock_Standard_Deviation_CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D34201FE97EDA000A985B /* Stock_Standard_Deviation_CalcTests.swift */; };
+		BA9D342C1FE97EDA000A985B /* Stock_Standard_Deviation_CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9D342B1FE97EDA000A985B /* Stock_Standard_Deviation_CalcUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA9D341D1FE97EDA000A985B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9D34001FE97ED8000A985B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA9D34071FE97ED8000A985B;
+			remoteInfo = "Stock Standard Deviation Calc";
+		};
+		BA9D34281FE97EDA000A985B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA9D34001FE97ED8000A985B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA9D34071FE97ED8000A985B;
+			remoteInfo = "Stock Standard Deviation Calc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA9D34081FE97ED9000A985B /* Stock Standard Deviation Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stock Standard Deviation Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9D340B1FE97ED9000A985B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA9D340D1FE97ED9000A985B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA9D34101FE97ED9000A985B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA9D34121FE97ED9000A985B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA9D34151FE97ED9000A985B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA9D34171FE97ED9000A985B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9D341C1FE97EDA000A985B /* Stock Standard Deviation CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock Standard Deviation CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9D34201FE97EDA000A985B /* Stock_Standard_Deviation_CalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_Standard_Deviation_CalcTests.swift; sourceTree = "<group>"; };
+		BA9D34221FE97EDA000A985B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA9D34271FE97EDA000A985B /* Stock Standard Deviation CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stock Standard Deviation CalcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9D342B1FE97EDA000A985B /* Stock_Standard_Deviation_CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock_Standard_Deviation_CalcUITests.swift; sourceTree = "<group>"; };
+		BA9D342D1FE97EDA000A985B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA9D34051FE97ED8000A985B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D34191FE97EDA000A985B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D34241FE97EDA000A985B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA9D33FF1FE97ED8000A985B = {
+			isa = PBXGroup;
+			children = (
+				BA9D340A1FE97ED9000A985B /* Stock Standard Deviation Calc */,
+				BA9D341F1FE97EDA000A985B /* Stock Standard Deviation CalcTests */,
+				BA9D342A1FE97EDA000A985B /* Stock Standard Deviation CalcUITests */,
+				BA9D34091FE97ED9000A985B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA9D34091FE97ED9000A985B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D34081FE97ED9000A985B /* Stock Standard Deviation Calc.app */,
+				BA9D341C1FE97EDA000A985B /* Stock Standard Deviation CalcTests.xctest */,
+				BA9D34271FE97EDA000A985B /* Stock Standard Deviation CalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA9D340A1FE97ED9000A985B /* Stock Standard Deviation Calc */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D340B1FE97ED9000A985B /* AppDelegate.swift */,
+				BA9D340D1FE97ED9000A985B /* ViewController.swift */,
+				BA9D340F1FE97ED9000A985B /* Main.storyboard */,
+				BA9D34121FE97ED9000A985B /* Assets.xcassets */,
+				BA9D34141FE97ED9000A985B /* LaunchScreen.storyboard */,
+				BA9D34171FE97ED9000A985B /* Info.plist */,
+			);
+			path = "Stock Standard Deviation Calc";
+			sourceTree = "<group>";
+		};
+		BA9D341F1FE97EDA000A985B /* Stock Standard Deviation CalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D34201FE97EDA000A985B /* Stock_Standard_Deviation_CalcTests.swift */,
+				BA9D34221FE97EDA000A985B /* Info.plist */,
+			);
+			path = "Stock Standard Deviation CalcTests";
+			sourceTree = "<group>";
+		};
+		BA9D342A1FE97EDA000A985B /* Stock Standard Deviation CalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA9D342B1FE97EDA000A985B /* Stock_Standard_Deviation_CalcUITests.swift */,
+				BA9D342D1FE97EDA000A985B /* Info.plist */,
+			);
+			path = "Stock Standard Deviation CalcUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA9D34071FE97ED8000A985B /* Stock Standard Deviation Calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9D34301FE97EDA000A985B /* Build configuration list for PBXNativeTarget "Stock Standard Deviation Calc" */;
+			buildPhases = (
+				BA9D34041FE97ED8000A985B /* Sources */,
+				BA9D34051FE97ED8000A985B /* Frameworks */,
+				BA9D34061FE97ED8000A985B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stock Standard Deviation Calc";
+			productName = "Stock Standard Deviation Calc";
+			productReference = BA9D34081FE97ED9000A985B /* Stock Standard Deviation Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA9D341B1FE97EDA000A985B /* Stock Standard Deviation CalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9D34331FE97EDA000A985B /* Build configuration list for PBXNativeTarget "Stock Standard Deviation CalcTests" */;
+			buildPhases = (
+				BA9D34181FE97EDA000A985B /* Sources */,
+				BA9D34191FE97EDA000A985B /* Frameworks */,
+				BA9D341A1FE97EDA000A985B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9D341E1FE97EDA000A985B /* PBXTargetDependency */,
+			);
+			name = "Stock Standard Deviation CalcTests";
+			productName = "Stock Standard Deviation CalcTests";
+			productReference = BA9D341C1FE97EDA000A985B /* Stock Standard Deviation CalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA9D34261FE97EDA000A985B /* Stock Standard Deviation CalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9D34361FE97EDA000A985B /* Build configuration list for PBXNativeTarget "Stock Standard Deviation CalcUITests" */;
+			buildPhases = (
+				BA9D34231FE97EDA000A985B /* Sources */,
+				BA9D34241FE97EDA000A985B /* Frameworks */,
+				BA9D34251FE97EDA000A985B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA9D34291FE97EDA000A985B /* PBXTargetDependency */,
+			);
+			name = "Stock Standard Deviation CalcUITests";
+			productName = "Stock Standard Deviation CalcUITests";
+			productReference = BA9D34271FE97EDA000A985B /* Stock Standard Deviation CalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA9D34001FE97ED8000A985B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ben Shiller";
+				TargetAttributes = {
+					BA9D34071FE97ED8000A985B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					BA9D341B1FE97EDA000A985B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA9D34071FE97ED8000A985B;
+					};
+					BA9D34261FE97EDA000A985B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA9D34071FE97ED8000A985B;
+					};
+				};
+			};
+			buildConfigurationList = BA9D34031FE97ED8000A985B /* Build configuration list for PBXProject "Stock Standard Deviation Calc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA9D33FF1FE97ED8000A985B;
+			productRefGroup = BA9D34091FE97ED9000A985B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA9D34071FE97ED8000A985B /* Stock Standard Deviation Calc */,
+				BA9D341B1FE97EDA000A985B /* Stock Standard Deviation CalcTests */,
+				BA9D34261FE97EDA000A985B /* Stock Standard Deviation CalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA9D34061FE97ED8000A985B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D34161FE97ED9000A985B /* LaunchScreen.storyboard in Resources */,
+				BA9D34131FE97ED9000A985B /* Assets.xcassets in Resources */,
+				BA9D34111FE97ED9000A985B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D341A1FE97EDA000A985B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D34251FE97EDA000A985B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA9D34041FE97ED8000A985B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D340E1FE97ED9000A985B /* ViewController.swift in Sources */,
+				BA9D340C1FE97ED9000A985B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D34181FE97EDA000A985B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D34211FE97EDA000A985B /* Stock_Standard_Deviation_CalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9D34231FE97EDA000A985B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9D342C1FE97EDA000A985B /* Stock_Standard_Deviation_CalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA9D341E1FE97EDA000A985B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA9D34071FE97ED8000A985B /* Stock Standard Deviation Calc */;
+			targetProxy = BA9D341D1FE97EDA000A985B /* PBXContainerItemProxy */;
+		};
+		BA9D34291FE97EDA000A985B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA9D34071FE97ED8000A985B /* Stock Standard Deviation Calc */;
+			targetProxy = BA9D34281FE97EDA000A985B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA9D340F1FE97ED9000A985B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA9D34101FE97ED9000A985B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA9D34141FE97ED9000A985B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA9D34151FE97ED9000A985B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA9D342E1FE97EDA000A985B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA9D342F1FE97EDA000A985B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA9D34311FE97EDA000A985B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stock Standard Deviation Calc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillerben.Stock-Standard-Deviation-Calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BA9D34321FE97EDA000A985B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stock Standard Deviation Calc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillerben.Stock-Standard-Deviation-Calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BA9D34341FE97EDA000A985B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Stock Standard Deviation CalcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillerben.Stock-Standard-Deviation-CalcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock Standard Deviation Calc.app/Stock Standard Deviation Calc";
+			};
+			name = Debug;
+		};
+		BA9D34351FE97EDA000A985B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Stock Standard Deviation CalcTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillerben.Stock-Standard-Deviation-CalcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stock Standard Deviation Calc.app/Stock Standard Deviation Calc";
+			};
+			name = Release;
+		};
+		BA9D34371FE97EDA000A985B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Stock Standard Deviation CalcUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillerben.Stock-Standard-Deviation-CalcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Stock Standard Deviation Calc";
+			};
+			name = Debug;
+		};
+		BA9D34381FE97EDA000A985B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Stock Standard Deviation CalcUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shillerben.Stock-Standard-Deviation-CalcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Stock Standard Deviation Calc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA9D34031FE97ED8000A985B /* Build configuration list for PBXProject "Stock Standard Deviation Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9D342E1FE97EDA000A985B /* Debug */,
+				BA9D342F1FE97EDA000A985B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9D34301FE97EDA000A985B /* Build configuration list for PBXNativeTarget "Stock Standard Deviation Calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9D34311FE97EDA000A985B /* Debug */,
+				BA9D34321FE97EDA000A985B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA9D34331FE97EDA000A985B /* Build configuration list for PBXNativeTarget "Stock Standard Deviation CalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9D34341FE97EDA000A985B /* Debug */,
+				BA9D34351FE97EDA000A985B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA9D34361FE97EDA000A985B /* Build configuration list for PBXNativeTarget "Stock Standard Deviation CalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9D34371FE97EDA000A985B /* Debug */,
+				BA9D34381FE97EDA000A985B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA9D34001FE97ED8000A985B /* Project object */;
+}
