@@ -18,16 +18,19 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
         
-        let formatter = NumberFormatter()
-        formatter.numberStyle = NumberFormatter.Style.decimal
+        // if all inputs are valid
+        if (impliedVolatility.hasText && price.hasText && numDays.hasText) {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = NumberFormatter.Style.decimal
         
-        let impliedVolatilityDouble = (formatter.number(from: impliedVolatility.text!)?.doubleValue)!
-        let priceDouble = (formatter.number(from: price.text!)?.doubleValue)!
-        let numDaysDouble = (formatter.number(from: numDays.text!)?.doubleValue)!
-        
-        let stddev = impliedVolatilityDouble * priceDouble * sqrt(numDaysDouble / 365)
-        stddevLabel.text = String(format: "%.4f", stddev)
-        
+            let impliedVolatilityDouble = (formatter.number(from: impliedVolatility.text!)?.doubleValue)!
+            let priceDouble = (formatter.number(from: price.text!)?.doubleValue)!
+            let numDaysDouble = (formatter.number(from: numDays.text!)?.doubleValue)!
+
+            let stddev = impliedVolatilityDouble * priceDouble * sqrt(numDaysDouble / 365)
+            stddevLabel.text = String(format: "%.4f", stddev)
+        }
+    
         super.touchesBegan(touches, with: event)
     }
 
@@ -35,14 +38,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         stddevLabel.text = "0"
+        stddevLabel.adjustsFontSizeToFitWidth = true
         
-        impliedVolatility.text = "0"
+        impliedVolatility.placeholder = "0"
+        impliedVolatility.clipsToBounds = true;
         impliedVolatility.keyboardType = UIKeyboardType.decimalPad
         
-        price.text = "0"
+        price.placeholder = "0"
+        price.clipsToBounds = true;
         price.keyboardType = UIKeyboardType.decimalPad
 
-        numDays.text = "0"
+        numDays.placeholder = "0"
+        numDays.clipsToBounds = true;
         numDays.keyboardType = UIKeyboardType.decimalPad
     }
 
