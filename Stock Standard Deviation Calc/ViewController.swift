@@ -17,37 +17,31 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
-        
-        // if all inputs are valid
         if (impliedVolatility.hasText && price.hasText && numDays.hasText) {
+            // get numbers from input boxes
             let formatter = NumberFormatter()
             formatter.numberStyle = NumberFormatter.Style.decimal
-        
             let impliedVolatilityDouble = (formatter.number(from: impliedVolatility.text!)?.doubleValue)!
             let priceDouble = (formatter.number(from: price.text!)?.doubleValue)!
             let numDaysDouble = (formatter.number(from: numDays.text!)?.doubleValue)!
-
+            // output standard deviation
             let stddev = impliedVolatilityDouble * priceDouble * sqrt(numDaysDouble / 365)
             stddevLabel.text = String(format: "%.4f", stddev)
         }
-    
         super.touchesBegan(touches, with: event)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // set initial settings
         stddevLabel.text = "0"
         stddevLabel.adjustsFontSizeToFitWidth = true
-        
         impliedVolatility.placeholder = "0"
         impliedVolatility.clipsToBounds = true;
         impliedVolatility.keyboardType = UIKeyboardType.decimalPad
-        
         price.placeholder = "0"
         price.clipsToBounds = true;
         price.keyboardType = UIKeyboardType.decimalPad
-
         numDays.placeholder = "0"
         numDays.clipsToBounds = true;
         numDays.keyboardType = UIKeyboardType.decimalPad
