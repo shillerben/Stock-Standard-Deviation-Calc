@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var stddevLabel: UILabel!
+    @IBOutlet weak var rangeLabel: UILabel!
     @IBOutlet weak var impliedVolatility: UITextField!
     @IBOutlet weak var price: UITextField!
     @IBOutlet weak var numDays: UITextField!
@@ -27,6 +28,10 @@ class ViewController: UIViewController {
             // output standard deviation
             let stddev = impliedVolatilityDouble * priceDouble * sqrt(numDaysDouble / 365)
             stddevLabel.text = String(format: "%.4f", stddev)
+            // output range
+            let min = priceDouble - stddev
+            let max = priceDouble + stddev
+            rangeLabel.text = String(format: "%.2f", min) + " to " + String(format: "%.2f", max)
         }
         super.touchesBegan(touches, with: event)
     }
@@ -36,6 +41,8 @@ class ViewController: UIViewController {
         // set initial settings
         stddevLabel.text = "0"
         stddevLabel.adjustsFontSizeToFitWidth = true
+        rangeLabel.text = "0 to 0"
+        rangeLabel.adjustsFontSizeToFitWidth = true
         impliedVolatility.placeholder = "0"
         impliedVolatility.clipsToBounds = true;
         impliedVolatility.keyboardType = UIKeyboardType.decimalPad
