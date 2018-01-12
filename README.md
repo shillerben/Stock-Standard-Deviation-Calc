@@ -11,7 +11,7 @@ A simple iOS app to calculate one standard deviation of an underlying's price.
 2. Plug your iOS device into your computer and select it as the target device for the project
   * Or select an emulator as the target device
 3. Launch the app on your device or emulator
-  * Note: it may take a while to install on the device
+  * Note: Be sure to use a valid Apple ID account to sign the project. It may take a while to install on the device
   
 ## Usage
 1. Enter the underlying's price and implied volatility, as well as the days to expiration, in the specified boxes
